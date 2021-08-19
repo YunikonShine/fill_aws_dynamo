@@ -63,9 +63,9 @@ public class Utils {
         return LocalDate.ofEpochDay(randomDay);
     }
 
-    public static BaseEnum generateRandomStatus(BaseEnum[] baseEnum) {
+    public static String generateRandomStatus(BaseEnum[] baseEnum) {
         Integer code = generateRandomInteger(0, baseEnum.length);
-        return baseEnum[code];
+        return baseEnum[code].toString();
     }
 
     public static LocalDateTime generateRandomDateTime() {
